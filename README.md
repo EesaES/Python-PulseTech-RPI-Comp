@@ -3,6 +3,8 @@ This code allows you to take your heartrate from a Heartrate sensor (MAX 30101) 
 
 For this to work you need to add this code to the bottom of your flask website:
 @app.route("/processfile")
+
+
 def process_file():
     file = open("static/uploads/hr.txt","r")
     # this is where your txt file is #
